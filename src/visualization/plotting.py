@@ -344,13 +344,13 @@ def plot_betti_curves(betti_curves, homology_dimensions=None, samplings=None):
                 x=samplings,
                 y=betti_curves[i, :],
                 mode="lines",
-                showlegend=False,
+                showlegend=True,
                 hoverinfo="none",
                 name=str(dimension),
             )
         )
 
-    fig.update_layout(showlegend=False)
+    fig.update_layout(showlegend=True)
     return fig
 
 

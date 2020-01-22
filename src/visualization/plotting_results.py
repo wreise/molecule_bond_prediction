@@ -29,7 +29,9 @@ def plot_results(df):
         fig: plotly object
     """
     keyword_dict = {0: 'without topological features',
-                    1: 'with topological features'}
+                    1: 'with topological features',
+                    2: 'with top. PC features',
+                    3: 'with top. graph features'}
     fig = gobj.Figure()
 
     for c in (set(df.columns)-set(['ticktext'])):
